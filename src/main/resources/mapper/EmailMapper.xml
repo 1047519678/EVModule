@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper
+        PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+        "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="cn.mvc.dao.EmailDao">
+    <select id="queryDataByTask" resultType="Email">
+        SELECT createid, taskid, email, empyname, EmailPushState, remark, rank, createtime
+    FROM PushlInFo
+    WHERE taskId=#{taskId} and EmailPushState = 0 and email  is not null and email !='' and createid = 1
+    order by rank
+    </select>
+</mapper>

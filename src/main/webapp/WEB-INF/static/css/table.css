@@ -1,0 +1,121 @@
+@charset "utf-8";
+
+body {
+	width: 100%;
+	font-size: 14px;
+}
+
+table.tableHue1 {
+	border-collapse: collapse;
+	/*border: 1px #a4d5e3 solid;*/
+	border: 1px #9bcfe694 solid;
+}
+
+table.tableHue1 td {
+	height: 30px; >
+	height: 20px;
+	padding: 5px;
+	color: #333;
+}
+
+table.tableHue1 thead td {
+	/* background: #e2f3fa; */
+	/*background: #6ebcde;*/
+	background: #5db0d6;
+}
+
+table.tableHue1 td.title1 {
+	background: #e2f3fa;
+}
+
+table.tableHue1 td.left {
+	text-align: left;
+}
+
+table.tableHue1 td.right {
+	text-align: right;
+}
+
+table.tableHue1 tr.over td {
+	background: #f1fafe;
+}
+table.tableHue1 tr:nth-child(odd){
+     background-color: #f1fafe;
+ }
+
+/* sort_switch begin */
+.sort_switch {
+	position: relative;
+	height: 28px;
+	margin-bottom: 10px;
+}
+
+.sort_switch div.right_wrap {
+	position: absolute;
+	top: 6px;
+	right: 5px;
+}
+
+.sort_switch ul {
+	margin-left: 5px;
+}
+
+.sort_switch ul li {
+	float: left;
+	font-size: 12px;
+	font-weight: bold;
+	margin-top: 1px;
+	margin-right: 10px;
+	  background: #cfe6ee;
+/* background: #6ebcde;  */
+	border: 1px #9a9899 solid;
+	cursor: pointer;
+	border-radius: 3px;/*让按钮变得圆滑一点*/
+}
+
+.sort_switch ul li a:link, .sort_switch ul li a:visited {
+	display: block;
+	padding: 0 20px;
+	line-height: 25px;
+	color: #00436f;
+	blr: expression(this.onFocus = this.blur ())
+}
+
+.sort_switch ul li :focus {
+	outline: none;
+}
+
+.sort_switch ul li a:hover {
+	text-decoration: none;
+	color: #197cce;
+}
+
+.sort_switch ul li.selected {
+	border: 0;
+	margin-top: 0px;
+}
+
+.sort_switch ul li.selected a:link, .sort_switch ul li.selected a:visited
+	{
+	display: block;
+	padding: 0 30px;
+	line-height: 28px;
+	color: #cc6633;
+}
+
+.sort_switch ul li.selected a:hover {
+	text-decoration: none;
+	color: #cc6633;
+}
+
+.sort_content {
+	margin-bottom: 20px;
+}
+
+#main {
+	padding: 3px 20px;
+	position: relative;
+}
+
+
+
